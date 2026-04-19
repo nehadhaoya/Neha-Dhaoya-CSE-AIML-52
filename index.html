@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Compiler</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- FileSaver -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h3>CODE COMPILER</h3>
+    <div>
+        <button onclick="newProject()">New</button>
+        <button onclick="resetCode()">Reset</button>
+        <button onclick="saveFile()">Save</button>
+        <button onclick="runCode()">Run</button>
+    </div>
+</header>
+
+<div class="tabs">
+    <div class="tab active" onclick="openTab(event,'html')">HTML</div>
+    <div class="tab" onclick="openTab(event,'css')">CSS</div>
+    <div class="tab" onclick="openTab(event,'js')">JS</div>
+</div>
+
+<div id="html" class="editor active">
+    <textarea id="htmlCode"></textarea>
+</div>
+
+<div id="css" class="editor">
+    <textarea id="cssCode"></textarea>
+</div>
+
+<div id="js" class="editor">
+    <textarea id="jsCode"></textarea>
+</div>
+
+<h3>Live Preview</h3>
+<iframe id="output"></iframe>
+
+<!-- JS LINK -->
+<script src="script.js"></script>
+
+</body>
+</html>

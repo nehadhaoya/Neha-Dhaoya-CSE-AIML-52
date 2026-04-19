@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0d0d15;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #111;
+}
+
+button {
+    padding: 6px 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    background: #222;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #444;
+}
+
+/* Editors */
+.editor {
+    display: none;
+}
+
+.editor.active {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    background: #000;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+/* Preview */
+iframe {
+    width: 100%;
+    height: 200px;
+    background: white;
+}
